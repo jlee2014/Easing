@@ -1,0 +1,23 @@
+    
+    float x;
+    float y;
+    float distX;
+    float distY;
+    float targetX=mouseX;
+    float targetY=mouseY;
+    float easing=.1;
+    void setup() {
+      size(750, 750);
+    
+    
+    }
+    void draw() {
+      background(0);
+      targetX=mouseX;
+      targetY=mouseY;
+      distX=targetX-x;
+      distY=targetY-y;
+      x+=distX*easing;
+      y+=distY*easing;
+      ellipse(,x,y,50, 50);
+    }
